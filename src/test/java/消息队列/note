@@ -1,0 +1,23 @@
+消息队列：
+
+用处：
+    1.异步处理
+    2.应用解耦
+    3.流量削峰
+
+Exchange分发消息的策略：
+    direct  经过路由键
+    fanout  不经过路由键
+    topic   模糊匹配
+    headers （和direct一致 但是性能差很多 已经弃用
+
+durable持久化 是rabbitmq admin上面的一种
+
+
+springboot中使用@rabbitlistener注解
+
+创建exchange
+amqp.declareExchange
+
+
+常见面试题：

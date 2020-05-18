@@ -1,0 +1,28 @@
+数据库基本概念：
+
+三范式：
+    第一范式：各个列元素不可再次分割
+    第二范式：列所有元素必须全部依赖主键
+    第三范式：列中不可出现传递依赖
+
+
+数据库事务
+事务的特性：ACID
+    原子性：事务要不全部提交 要不全部回滚
+    一致性：事务的执行结果必须使数据库状态从一个一致性变成另一个一致性
+    隔离线：并发执行事务时不能彼此影响
+    持久性：事务一但提交对数据库的改变是永久的
+
+隔离级别：
+可读未提交（READ UNCOMMITED
+可读提交 (READ COMMITED
+可重复读 (REPEATED READ (默认
+串行化（SERIALIZABLE
+
+索引的创建：
+Alter table '表名' add prymary key ('列名')
+alter table '表名' add unique （'列名'）
+alter table '表名' add index index_name（'列名'）
+ALTER TABLE `table_name` ADD INDEX index_name ( `column1`, `column2`, `column3` )
+ALTER TABLE `table_name` ADD FULLTEXT ( `column`)
+
