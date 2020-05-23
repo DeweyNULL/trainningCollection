@@ -1,5 +1,9 @@
 package 设计模式.结构型.适配器模式;
 
+import java.util.HashMap;
+import java.util.Observable;
+import java.util.Observer;
+
 /**
  * @program testCollections
  * @description: 适配器模式
@@ -10,4 +14,13 @@ package 设计模式.结构型.适配器模式;
  */
 
 public class Adapter {
+}
+
+ class HashMapObserverAdapter<K, V> extends HashMap<K, V> implements Observer {
+
+    public void update(Observable o, Object arg) {
+        //被观察者变化时，清空Map
+        super.clear();
+    }
+
 }

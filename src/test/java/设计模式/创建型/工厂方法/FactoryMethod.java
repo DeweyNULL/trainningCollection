@@ -26,7 +26,7 @@ public class FactoryMethod {
         la.turnOn();
         la.turnOff();
 
-        Creator b = new LightACreator();
+        Creator b = new LightBCreator();
         Light lb = b.createProduct();
         lb.turnOn();
         lb.turnOff();

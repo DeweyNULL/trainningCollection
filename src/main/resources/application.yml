@@ -24,4 +24,4 @@ spring:
 #  mapper-locations: classpath:Mapper/*Mapper.xml
 
 
-dbtype: mysql
+
